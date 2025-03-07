@@ -1,0 +1,19 @@
+{% extends "../layout.html" %}
+{% block content %}
+{% load static %}
+<div class="content-section">
+    {{ form.media }}    
+    <form method="POST">
+        <fieldset>
+            <legend>Add Inventory</legend>
+            {% csrf_token %}
+            <div>     
+                {{ form }}          
+            </div>
+            <div>
+                <button>Add Inventory</button>
+            </div>
+        </fieldset>
+    </form>
+</div>
+{% endblock %}
