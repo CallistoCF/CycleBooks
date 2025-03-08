@@ -137,5 +137,4 @@ CRISPY_TEMPLATE_PACK = 'uni_form'
 LOGIN_REDIRECT_URL = "/inventory"
 LOGIN_URL="login"
 
-
 django_heroku.settings(locals())
